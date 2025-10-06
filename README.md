@@ -274,7 +274,7 @@ const abhinav = {
 </div>
 
 <div align="center">
-  <h2>Show some ❤️ by starring some of the repositories</h2>
+  <h2>Show some ❤️ by starring some of the repositories..</h2>
   
   <img src="https://komarev.com/ghpvc/?username=echoAbhinav&style=for-the-badge&color=brightgreen" alt="Profile Views"/>
 </div>
