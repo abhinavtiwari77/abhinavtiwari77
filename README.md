@@ -27,7 +27,7 @@ const abhinav = {
     technologies: {
         frontend: {
             js: ["React", "Next.js"],
-            css: ["Tailwind", "Bootstrap"]
+            css: ["Tailwind"]
         },
         backend: {
             js: ["Node.js", "Express.js"],
