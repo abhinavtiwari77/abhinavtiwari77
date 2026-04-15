@@ -21,7 +21,7 @@
         
 ```javascript
 const abhinav = {
-    pronouns: "He" | "Him",
+    pronouns: "He" | "Him"
     code: ["JavaScript", "Python", "Java", "C++", "C"],
     askMeAbout: ["web dev", "backend", "databases"],
     technologies: {
