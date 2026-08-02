@@ -294,7 +294,7 @@ def stars_counter(data):
     return total_stars
 
 
-def committers_rank_getter(username, country='kurdistan'):
+def committers_rank_getter(username, country='india'):
     url = f"https://user-badge.committers.top/{country}_private/{username}.svg"
     response = requests.get(url, timeout=15)
     if response.status_code != 200:
