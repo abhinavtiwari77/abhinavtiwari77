@@ -24,8 +24,8 @@
     <circle cx="72" cy="72" r="32" fill="url(#avatarGradientLight)"/>
     <text x="54" y="81" id="initials" font-family="Inter" style="font: bold 24px 'Inter', sans-serif; fill: #FFFFFF;" font-weight="bold">AT</text>
 
-    <text x="120" y="65" id="display_name" class="title">Abhin Tiwari</text>
-    <text x="120" y="90" id="subtitle_data" class="subtitle">GitHub Profile README</text>
+    <text x="120" y="65" id="display_name" class="title">Abhinav tiwari</text>
+    <text x="120" y="90" id="subtitle_data" class="subtitle">Full Stack Developer | MERN Stack</text>
 
 <!--    <text x="50" y="135" class="body-text">Uptime:</text>-->
 <!--    <text x="110" y="135" id="age_data" class="mono">23 years, 1 month, 5 days</text>-->
@@ -45,13 +45,13 @@
     <!-- Streak Card (New) -->
     <rect x="494" y="24" width="220" height="180" rx="24" fill="#E8F5E9" stroke="#C8E6C9" stroke-width="1"/>
     <text x="518" y="55" class="label" fill="#1B5E20">Current Streak</text>
-    <text x="518" y="140" id="streak_data" class="streak-value">127</text>
+    <text x="518" y="140" id="streak_data" class="streak-value">9</text>
     <text x="518" y="170" class="body-text" fill="#1B5E20" font-size="12">Consecutive Days</text>
 
     <!-- Rank Card -->
     <rect x="734" y="24" width="227" height="180" rx="24" fill="#EADDFF"/>
     <text x="754" y="55" class="label" fill="#21005D" fill-opacity="0.7">Global Rank</text>
-    <text x="754" y="140" id="rank_data" class="stat-value" style="font-size: 54px;">#16</text>
+    <text x="754" y="140" id="rank_data" class="stat-value" style="font-size: 54px;">#Unranked</text>
     <text x="754" y="170" class="body-text" fill="#21005D" font-size="12">Top Contributor</text>
 
     <!-- Tech Stack Card -->
@@ -69,31 +69,31 @@
 
     <!-- Git Metrics Cards -->
     <rect x="594" y="224" width="177" height="100" rx="24" fill="#F3EDF7"/>
-    <text x="682" y="270" text-anchor="middle" id="repo_data" class="mono" style="font-size: 22px; font-weight: bold;">77</text>
+    <text x="682" y="270" text-anchor="middle" id="repo_data" class="mono" style="font-size: 22px; font-weight: bold;">71</text>
     <text x="682" y="295" text-anchor="middle" class="label">Repos</text>
 
     <rect x="784" y="224" width="177" height="100" rx="24" fill="#F3EDF7"/>
-    <text x="872" y="270" text-anchor="middle" id="contrib_data" class="mono" style="font-size: 22px; font-weight: bold; fill: #B3261E;">86</text>
+    <text x="872" y="270" text-anchor="middle" id="contrib_data" class="mono" style="font-size: 22px; font-weight: bold; fill: #B3261E;">75</text>
     <text x="872" y="295" text-anchor="middle" class="label">Contribs</text>
 
     <!-- LOC Card -->
     <rect x="594" y="344" width="367" height="140" rx="24" fill="#F3EDF7"/>
     <text x="618" y="390" class="label">Total Lines of Code</text>
-    <text x="943" y="390" text-anchor="end" id="loc_data" class="mono" font-size="20">780,034</text>
+    <text x="943" y="390" text-anchor="end" id="loc_data" class="mono" font-size="20">659,112</text>
 
     <rect x="618" y="410" width="319" height="12" rx="6" fill="#E7E0EC"/>
     <rect x="618" y="410" width="260" height="12" rx="6" fill="#6750A4"/>
 
-    <text x="618" y="450" id="loc_add" class="mono add-color" font-size="11">++ 1,024,887</text>
-    <text x="943" y="450" text-anchor="end" id="loc_del" class="mono del-color" font-size="11">-- 244,853</text>
+    <text x="618" y="450" id="loc_add" class="mono add-color" font-size="11">++ 1,250,245</text>
+    <text x="943" y="450" text-anchor="end" id="loc_del" class="mono del-color" font-size="11">-- 591,133</text>
 
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#E7E0EC"/>
     <text x="48" y="535" class="body-text" font-weight="500" font-size="12">Abhin Tiwari | GitHub profile stats</text>
-    <text x="940" y="535" text-anchor="end" id="commit_data" class="mono" font-size="12" fill-opacity="0.6">Commits: 5119</text>
+    <text x="940" y="535" text-anchor="end" id="commit_data" class="mono" font-size="12" fill-opacity="0.6">Commits: 1592</text>
 
     <!-- Hidden / script-required elements -->
-    <text id="follower_data" display="none">22</text>
+    <text id="follower_data" display="none">6</text>
     <text id="age_data_dots" display="none"> . </text>
     <text id="commit_data_dots" display="none"> . </text>
     <text id="rank_data_dots" display="none"> . </text>
