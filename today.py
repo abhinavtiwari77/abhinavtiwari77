@@ -296,10 +296,14 @@ def stars_counter(data):
 
 def committers_rank_getter(username, country='india'):
     url = f"https://user-badge.committers.top/{country}_private/{username}.svg"
-    response = requests.get(url, timeout=15)
-    if response.status_code != 200:
-        return 'Unranked'
-    return extract_rank_from_committers_svg(response.text)
+    try:
+        response = requests.get(url, timeout=15)
+        if response.status_code != 200:
+            return 'Rising Star'
+        rank = extract_rank_from_committers_svg(response.text)
+        return rank if isinstance(rank, int) else 'Rising Star'
+    except Exception:
+        return 'Rising Star'
 
 
 def extract_rank_from_committers_svg(svg_text):
@@ -330,7 +334,9 @@ def svg_overwrite(filename, display_name, subtitle_data, age_data, commit_data, 
     # Custom Prefixes
     # Add 10 to accommodate for the 2 commits done in the excluded repos which are too large to parse
     justify_format(root, 'commit_data', f"Commits: {commit_data + 2}", 0)
-    justify_format(root, 'rank_data', f"#{rank_data}", 0)
+    # Show a friendly label when no numeric rank is available.
+    rank_text = f"#{rank_data}" if isinstance(rank_data, int) else str(rank_data)
+    justify_format(root, 'rank_data', rank_text, 0)
     justify_format(root, 'loc_add', f"++ {loc_data[0]}", 0)
     justify_format(root, 'loc_del', f"-- {loc_data[1]}", 0)
 
