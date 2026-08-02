@@ -48,11 +48,13 @@
     <text x="518" y="140" id="streak_data" class="streak-value">9</text>
     <text x="518" y="170" class="body-text" fill="#1B5E20" font-size="12">Consecutive Days</text>
 
-    <!-- Rank Card -->
+    <!-- Availability Card -->
     <rect x="734" y="24" width="227" height="180" rx="24" fill="#EADDFF"/>
-    <text x="754" y="55" class="label" fill="#21005D" fill-opacity="0.7">Global Rank</text>
-    <text x="754" y="140" id="rank_data" class="stat-value" style="font-size: 54px;">Rising Star</text>
-    <text x="754" y="170" class="body-text" fill="#21005D" font-size="12">Top Contributor</text>
+    <text x="754" y="55" class="label" fill="#21005D" fill-opacity="0.9">AVAILABLE FOR</text>
+    <text x="754" y="95" class="body-text" fill="#21005D" style="font-size:16px;">• Full-time</text>
+    <text x="754" y="118" class="body-text" fill="#21005D" style="font-size:16px;">• Internships</text>
+    <text x="754" y="141" class="body-text" fill="#21005D" style="font-size:16px;">• Freelance</text>
+    <text x="754" y="164" class="body-text" fill="#21005D" style="font-size:16px;">• Open Source</text>
 
     <!-- Tech Stack Card -->
     <rect x="24" y="224" width="550" height="260" rx="24" stroke="#CAC4D0" stroke-width="1" fill="#FFFBFE"/>
