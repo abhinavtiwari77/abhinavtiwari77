@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="985" height="580" viewBox="0 0 985 580" fill="none">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Roboto+Mono:wght@500&amp;display=swap');
+        .d-title { font: bold 32px 'Inter', sans-serif; fill: #E6E1E5; }
+        .d-subtitle { font: 500 16px 'Inter', sans-serif; fill: #D0BCFF; }
+        .d-body-text { font: 400 14px 'Inter', sans-serif; fill: #CAC4D0; }
+        .d-label { font: bold 12px 'Inter', sans-serif; fill: #938F99; text-transform: uppercase; letter-spacing: 1px; }
+        .d-mono { font: 500 14px 'Roboto Mono', monospace; fill: #E6E1E5; }
+        .d-stat-value { font: bold 64px 'Roboto Mono', monospace; fill: #EADDFF; }
+        .d-streak-value { font: bold 48px 'Roboto Mono', monospace; fill: #BFCBAD; }
+        .d-chip-bg { fill: #49454F; stroke: #938F99; stroke-width: 1; }
+        .d-chip-bg-ide { fill: #4F378B; stroke: #938F99; stroke-width: 1; }
+        .d-chip-text { font: 500 12px 'Inter', sans-serif; fill: #CAC4D0; }
+        .d-add-color { fill: #81C784; }
+        .d-del-color { fill: #E57373; }
+    </style>
+
+    <!-- Background -->
+    <rect width="985" height="580" rx="28" fill="#1C1B1F"/>
+
+    <!-- Header Card (Shortened to make room for Streak) -->
+    <rect x="24" y="24" width="450" height="180" rx="24" fill="#332F37"/>
+    <circle cx="72" cy="72" r="32" fill="url(#avatarGradientDark)"/>
+    <text x="54" y="81" font-family="Inter" style="font: bold 24px 'Inter', sans-serif; fill: #381E72;" font-weight="bold">AT</text>
+
+    <text x="120" y="65" class="d-title">abhinavtiwari77</text>
+    <text x="120" y="90" class="d-subtitle">GitHub Profile README</text>
+
+<!--    <text x="50" y="135" class="d-body-text">Uptime:</text>-->
+<!--    <text x="110" y="135" id="age_data" class="d-mono">23 years, 1 month, 5 days</text>-->
+
+    <!-- OS Chips -->
+    <g transform="translate(50, 160)">
+        <rect width="65" height="26" rx="8" class="d-chip-bg"/>
+        <text x="12" y="17" class="d-chip-text">macOS</text>
+        <rect x="75" width="75" height="26" rx="8" class="d-chip-bg"/>
+        <text x="87" y="17" class="d-chip-text">Windows</text>
+        <rect x="160" width="55" height="26" rx="8" class="d-chip-bg"/>
+        <text x="172" y="17" class="d-chip-text">Linux</text>
+        <rect x="225" width="100" height="26" rx="8" class="d-chip-bg-ide"/>
+        <text x="237" y="17" class="d-chip-text">Webstorm IDE</text>
+    </g>
+
+    <!-- Streak Card (New) -->
+    <rect x="494" y="24" width="220" height="180" rx="24" fill="#2D332B" stroke="#444C3E" stroke-width="1"/>
+    <text x="518" y="55" class="d-label" fill="#BFCBAD">Current Streak</text>
+    <text x="518" y="140" id="streak_data" class="d-streak-value">127</text>
+    <text x="518" y="170" class="d-body-text" fill="#BFCBAD" font-size="12">Consecutive Days</text>
+
+    <!-- Rank Card -->
+    <rect x="734" y="24" width="227" height="180" rx="24" fill="#4F378B"/>
+    <text x="754" y="55" class="d-label" fill="#EADDFF" fill-opacity="0.7">Global Rank</text>
+    <text x="754" y="140" id="rank_data" class="d-stat-value" style="font-size: 54px;">#16</text>
+    <text x="754" y="170" class="d-body-text" fill="#EADDFF" font-size="12">Top Contributor</text>
+
+    <!-- Tech Stack Card -->
+    <rect x="24" y="224" width="550" height="260" rx="24" stroke="#938F99" stroke-width="1"/>
+    <text x="48" y="265" class="d-subtitle" font-size="18">Tech Stack</text>
+
+    <text x="48" y="295" class="d-label">Programming</text>
+    <text x="48" y="315" class="d-body-text" fill="#E6E1E5">TypeScript, JavaScript, Java, Python</text>
+
+    <text x="48" y="355" class="d-label">Frameworks &amp; Tools</text>
+    <text x="48" y="375" class="d-body-text" fill="#E6E1E5">React, React Native, Electron, NodeJS, MySQL</text>
+
+    <text x="48" y="415" class="d-label">Design &amp; Hobbies</text>
+    <text x="48" y="435" class="d-body-text" fill="#E6E1E5">Tailwind, Figma, Adobe Illustrator, Android Customization</text>
+
+    <!-- Git Metrics Cards -->
+    <rect x="594" y="224" width="177" height="100" rx="24" fill="#332F37"/>
+    <text x="682" y="270" text-anchor="middle" id="repo_data" class="d-mono" style="font-size: 22px; font-weight: bold;">77</text>
+    <text x="682" y="295" text-anchor="middle" class="d-label">Repos</text>
+
+    <rect x="784" y="224" width="177" height="100" rx="24" fill="#332F37"/>
+    <text x="872" y="270" text-anchor="middle" id="contrib_data" class="d-mono" style="font-size: 22px; font-weight: bold; fill: #EFB8C8;">86</text>
+    <text x="872" y="295" text-anchor="middle" class="d-label">Contribs</text>
+
+    <!-- LOC Card -->
+    <rect x="594" y="344" width="367" height="140" rx="24" fill="#332F37"/>
+    <text x="618" y="390" class="d-label">Total Lines of Code</text>
+    <text x="943" y="390" text-anchor="end" id="loc_data" class="d-mono" font-size="20">780,034</text>
+
+    <rect x="618" y="410" width="319" height="12" rx="6" fill="#49454F"/>
+    <rect x="618" y="410" width="260" height="12" rx="6" fill="#D0BCFF"/>
+
+    <text x="618" y="450" id="loc_add" class="d-mono d-add-color" font-size="11">++ 1,024,887</text>
+    <text x="943" y="450" text-anchor="end" id="loc_del" class="d-mono d-del-color" font-size="11">-- 244,853</text>
+
+    <!-- Footer -->
+    <rect x="24" y="504" width="937" height="52" rx="16" fill="#49454F"/>
+    <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Customize this section with your contact links</text>
+    <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 5119</text>
+
+    <!-- Hidden / script-required elements -->
+    <text id="follower_data" display="none">22</text>
+    <text id="age_data_dots" display="none"> . </text>
+    <text id="commit_data_dots" display="none"> . </text>
+    <text id="rank_data_dots" display="none"> . </text>
+    <text id="repo_data_dots" display="none"> . </text>
+    <text id="follower_data_dots" display="none"> . </text>
+    <text id="loc_data_dots" display="none"> . </text>
+    <text id="streak_data_dots" display="none"> . </text>
+
+    <defs>
+        <linearGradient id="avatarGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#D0BCFF;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#D0BCFF;stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+</svg>

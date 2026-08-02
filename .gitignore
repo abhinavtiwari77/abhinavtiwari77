@@ -1,0 +1,3 @@
+.idea/
+cache/*.txt
+__pycache__/
