@@ -51,7 +51,7 @@
     <!-- Rank Card -->
     <rect x="734" y="24" width="227" height="180" rx="24" fill="#4F378B"/>
     <text x="754" y="55" class="d-label" fill="#EADDFF" fill-opacity="0.7">Global Rank</text>
-    <text x="754" y="140" id="rank_data" class="d-stat-value" style="font-size: 54px;">#Unranked</text>
+    <text x="754" y="140" id="rank_data" class="d-stat-value" style="font-size: 54px;">Rising Star</text>
     <text x="754" y="170" class="d-body-text" fill="#EADDFF" font-size="12">Top Contributor</text>
 
     <!-- Tech Stack Card -->
@@ -90,10 +90,10 @@
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#49454F"/>
     <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Abhinav Tiwari | GitHub profile stats</text>
-    <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 1592</text>
+    <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 1555</text>
 
     <!-- Hidden / script-required elements -->
-    <text id="follower_data" display="none">6</text>
+    <text id="follower_data" display="none">7</text>
     <text id="age_data_dots" display="none"> . </text>
     <text id="commit_data_dots" display="none"> . </text>
     <text id="rank_data_dots" display="none"> . </text>
