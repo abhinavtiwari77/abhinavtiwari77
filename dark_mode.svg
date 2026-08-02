@@ -22,10 +22,10 @@
     <!-- Header Card (Shortened to make room for Streak) -->
     <rect x="24" y="24" width="450" height="180" rx="24" fill="#332F37"/>
     <circle cx="72" cy="72" r="32" fill="url(#avatarGradientDark)"/>
-    <text x="54" y="81" font-family="Inter" style="font: bold 24px 'Inter', sans-serif; fill: #381E72;" font-weight="bold">AT</text>
+    <text x="54" y="81" id="initials" font-family="Inter" style="font: bold 24px 'Inter', sans-serif; fill: #381E72;" font-weight="bold">AT</text>
 
-    <text x="120" y="65" class="d-title">abhinavtiwari77</text>
-    <text x="120" y="90" class="d-subtitle">GitHub Profile README</text>
+    <text x="120" y="65" id="display_name" class="d-title">Abhin Tiwari</text>
+    <text x="120" y="90" id="subtitle_data" class="d-subtitle">GitHub Profile README</text>
 
 <!--    <text x="50" y="135" class="d-body-text">Uptime:</text>-->
 <!--    <text x="110" y="135" id="age_data" class="d-mono">23 years, 1 month, 5 days</text>-->
@@ -89,7 +89,7 @@
 
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#49454F"/>
-    <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Customize this section with your contact links</text>
+    <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Abhin Tiwari | GitHub profile stats</text>
     <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 5119</text>
 
     <!-- Hidden / script-required elements -->

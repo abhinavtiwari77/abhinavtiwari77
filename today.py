@@ -311,12 +311,15 @@ def extract_rank_from_committers_svg(svg_text):
     return 'Unranked'
 
 
-def svg_overwrite(filename, age_data, commit_data, streak_data, rank_data, repo_data, contrib_data, follower_data,
-                  loc_data):
+def svg_overwrite(filename, display_name, subtitle_data, age_data, commit_data, streak_data, rank_data, repo_data, contrib_data,
+                  follower_data, loc_data, initials):
     tree = etree.parse(filename)
     root = tree.getroot()
 
     # Standard formats
+    justify_format(root, 'display_name', display_name, 0)
+    justify_format(root, 'subtitle_data', subtitle_data, 0)
+    justify_format(root, 'initials', initials, 0)
     justify_format(root, 'age_data', age_data, 0)
     justify_format(root, 'repo_data', repo_data, 0)
     justify_format(root, 'contrib_data', contrib_data, 0)
@@ -354,10 +357,11 @@ def find_and_replace(root, element_id, new_text):
 
 def user_getter(username):
     query_count('user_getter')
-    query = 'query($login: String!){ user(login: $login) { id createdAt } }'
+    query = 'query($login: String!){ user(login: $login) { id createdAt name login company bio avatarUrl } }'
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
-    return request.json()['data']['user']['id'], request.json()['data']['user']['createdAt']
+    user = request.json()['data']['user']
+    return user['id'], user['createdAt'], user['name'], user['login'], user['company'], user['bio'], user['avatarUrl']
 
 
 def follower_getter(username):
@@ -388,12 +392,16 @@ def formatter(query_type, difference):
 
 if __name__ == '__main__':
     print('Starting stats update...')
-    OWNER_ID, acc_date = user_getter(USER_NAME)
+    OWNER_ID, acc_date, display_name, login_name, company, bio, avatar_url = user_getter(USER_NAME)
     formatter('account data', 0)
 
     account_created_at = datetime.datetime.fromisoformat(acc_date.replace('Z', '+00:00')).replace(tzinfo=None)
     age_data, age_time = perf_counter(daily_readme, account_created_at)
     formatter('age calculation', age_time)
+
+    display_name = display_name or 'Abhin Tiwari'
+    subtitle_data = company or bio or 'GitHub Profile README'
+    initials = ''.join(part[0] for part in display_name.split() if part)[:2].upper() or login_name[:2].upper()
 
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time)
@@ -412,11 +420,9 @@ if __name__ == '__main__':
         '{:,}'.format(total_loc[2])
     ]
 
-    svg_overwrite('dark_mode.svg', age_data, commit_data, streak_data, rank_data, repo_data, contrib_data,
-                  follower_data,
-                  loc_formatted)
-    svg_overwrite('light_mode.svg', age_data, commit_data, streak_data, rank_data, repo_data, contrib_data,
-                  follower_data,
-                  loc_formatted)
+    svg_overwrite('dark_mode.svg', display_name, subtitle_data, age_data, commit_data, streak_data, rank_data, repo_data,
+                  contrib_data, follower_data, loc_formatted, initials)
+    svg_overwrite('light_mode.svg', display_name, subtitle_data, age_data, commit_data, streak_data, rank_data, repo_data,
+                  contrib_data, follower_data, loc_formatted, initials)
 
     print('Total GitHub GraphQL API calls:', sum(QUERY_COUNT.values()))
