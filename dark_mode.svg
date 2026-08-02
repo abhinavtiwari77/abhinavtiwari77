@@ -24,7 +24,7 @@
     <circle cx="72" cy="72" r="32" fill="url(#avatarGradientDark)"/>
     <text x="54" y="81" id="initials" font-family="Inter" style="font: bold 24px 'Inter', sans-serif; fill: #381E72;" font-weight="bold">AT</text>
 
-    <text x="120" y="65" id="display_name" class="d-title">Abhin Tiwari</text>
+    <text x="120" y="65" id="display_name" class="d-title">Abhinav Tiwari</text>
     <text x="120" y="90" id="subtitle_data" class="d-subtitle">GitHub Profile README</text>
 
 <!--    <text x="50" y="135" class="d-body-text">Uptime:</text>-->
@@ -58,14 +58,14 @@
     <rect x="24" y="224" width="550" height="260" rx="24" stroke="#938F99" stroke-width="1"/>
     <text x="48" y="265" class="d-subtitle" font-size="18">Tech Stack</text>
 
-    <text x="48" y="295" class="d-label">Programming</text>
-    <text x="48" y="315" class="d-body-text" fill="#E6E1E5">TypeScript, JavaScript, Java, Python</text>
+    <text x="48" y="295" class="d-label">Languages</text>
+    <text x="48" y="315" class="d-body-text" fill="#E6E1E5">JavaScript, Python, C++, Java, SQL</text>
 
-    <text x="48" y="355" class="d-label">Frameworks &amp; Tools</text>
-    <text x="48" y="375" class="d-body-text" fill="#E6E1E5">React, React Native, Electron, NodeJS, MySQL</text>
+    <text x="48" y="355" class="d-label">Frameworks &amp; Technologies</text>
+    <text x="48" y="375" class="d-body-text" fill="#E6E1E5">React, Next.js, Node.js, Express.js, Django, REST APIs</text>
 
-    <text x="48" y="415" class="d-label">Design &amp; Hobbies</text>
-    <text x="48" y="435" class="d-body-text" fill="#E6E1E5">Tailwind, Figma, Adobe Illustrator, Android Customization</text>
+    <text x="48" y="415" class="d-label">Databases &amp; Cloud</text>
+    <text x="48" y="435" class="d-body-text" fill="#E6E1E5">MongoDB, PostgreSQL, Firebase, Docker, Azure, Vercel</text>
 
     <!-- Git Metrics Cards -->
     <rect x="594" y="224" width="177" height="100" rx="24" fill="#332F37"/>
@@ -89,7 +89,7 @@
 
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#49454F"/>
-    <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Abhin Tiwari | GitHub profile stats</text>
+    <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Abhinav Tiwari | GitHub profile stats</text>
     <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 5119</text>
 
     <!-- Hidden / script-required elements -->

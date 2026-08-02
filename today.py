@@ -399,19 +399,52 @@ if __name__ == '__main__':
     age_data, age_time = perf_counter(daily_readme, account_created_at)
     formatter('age calculation', age_time)
 
-    display_name = display_name or 'Abhin Tiwari'
+    display_name = display_name or 'Abhinav Tiwari'
     subtitle_data = company or bio or 'GitHub Profile README'
     initials = ''.join(part[0] for part in display_name.split() if part)[:2].upper() or login_name[:2].upper()
 
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
-    formatter('LOC (cached)', loc_time)
+    try:
+        total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
+        formatter('LOC (cached)', loc_time)
+    except Exception as e:
+        print(f'LOC calculation failed: {e}')
+        total_loc = [0, 0, 0]
 
-    commit_data, _ = perf_counter(graph_commits)
-    streak_data, _ = perf_counter(fetch_streak, USER_NAME)
-    rank_data, _ = perf_counter(committers_rank_getter, USER_NAME)
-    repo_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
-    contrib_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
-    follower_data, _ = perf_counter(follower_getter, USER_NAME)
+    try:
+        commit_data, _ = perf_counter(graph_commits)
+    except Exception as e:
+        print(f'Commit data failed: {e}')
+        commit_data = 0
+    
+    try:
+        streak_data, _ = perf_counter(fetch_streak, USER_NAME)
+    except Exception as e:
+        print(f'Streak data failed: {e}')
+        streak_data = 'N/A'
+    
+    try:
+        rank_data, _ = perf_counter(committers_rank_getter, USER_NAME)
+    except Exception as e:
+        print(f'Rank data failed: {e}')
+        rank_data = 'Unranked'
+    
+    try:
+        repo_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+    except Exception as e:
+        print(f'Repo data failed: {e}')
+        repo_data = 0
+    
+    try:
+        contrib_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    except Exception as e:
+        print(f'Contrib data failed: {e}')
+        contrib_data = 0
+    
+    try:
+        follower_data, _ = perf_counter(follower_getter, USER_NAME)
+    except Exception as e:
+        print(f'Follower data failed: {e}')
+        follower_data = 0
 
     # Prepare comma formatted strings for SVG overwrite
     loc_formatted = [
