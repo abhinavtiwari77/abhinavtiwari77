@@ -81,18 +81,18 @@
     <!-- LOC Card -->
     <rect x="594" y="344" width="367" height="140" rx="24" fill="#332F37"/>
     <text x="618" y="390" class="d-label">Total Lines of Code</text>
-    <text x="943" y="390" text-anchor="end" id="loc_data" class="d-mono" font-size="20">668,271</text>
+    <text x="943" y="390" text-anchor="end" id="loc_data" class="d-mono" font-size="20">668,368</text>
 
     <rect x="618" y="410" width="319" height="12" rx="6" fill="#49454F"/>
     <rect x="618" y="410" width="260" height="12" rx="6" fill="#D0BCFF"/>
 
-    <text x="618" y="450" id="loc_add" class="d-mono d-add-color" font-size="11">++ 1,260,921</text>
-    <text x="943" y="450" text-anchor="end" id="loc_del" class="d-mono d-del-color" font-size="11">-- 592,650</text>
+    <text x="618" y="450" id="loc_add" class="d-mono d-add-color" font-size="11">++ 1,261,032</text>
+    <text x="943" y="450" text-anchor="end" id="loc_del" class="d-mono d-del-color" font-size="11">-- 592,664</text>
 
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#49454F"/>
     <text x="48" y="535" class="d-body-text" font-weight="500" font-size="12">Abhinav Tiwari | GitHub profile stats</text>
-    <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 1517</text>
+    <text x="940" y="535" text-anchor="end" id="commit_data" class="d-mono" font-size="12" fill-opacity="0.6">Commits: 1519</text>
 
     <!-- Hidden / script-required elements -->
     <text id="follower_data" display="none">6</text>
