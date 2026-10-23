@@ -75,19 +75,19 @@
     <text x="682" y="295" text-anchor="middle" class="label">Repos</text>
 
     <rect x="784" y="224" width="177" height="100" rx="24" fill="#F3EDF7"/>
-    <text x="872" y="270" text-anchor="middle" id="contrib_data" class="mono" style="font-size: 22px; font-weight: bold; fill: #B3261E;">92</text>
+    <text x="872" y="270" text-anchor="middle" id="contrib_data" class="mono" style="font-size: 22px; font-weight: bold; fill: #B3261E;">90</text>
     <text x="872" y="295" text-anchor="middle" class="label">Contribs</text>
 
     <!-- LOC Card -->
     <rect x="594" y="344" width="367" height="140" rx="24" fill="#F3EDF7"/>
     <text x="618" y="390" class="label">Total Lines of Code</text>
-    <text x="943" y="390" text-anchor="end" id="loc_data" class="mono" font-size="20">980,459</text>
+    <text x="943" y="390" text-anchor="end" id="loc_data" class="mono" font-size="20">980,328</text>
 
     <rect x="618" y="410" width="319" height="12" rx="6" fill="#E7E0EC"/>
     <rect x="618" y="410" width="260" height="12" rx="6" fill="#6750A4"/>
 
-    <text x="618" y="450" id="loc_add" class="mono add-color" font-size="11">++ 1,574,699</text>
-    <text x="943" y="450" text-anchor="end" id="loc_del" class="mono del-color" font-size="11">-- 594,240</text>
+    <text x="618" y="450" id="loc_add" class="mono add-color" font-size="11">++ 1,574,498</text>
+    <text x="943" y="450" text-anchor="end" id="loc_del" class="mono del-color" font-size="11">-- 594,170</text>
 
     <!-- Footer -->
     <rect x="24" y="504" width="937" height="52" rx="16" fill="#E7E0EC"/>
